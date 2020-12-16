@@ -10,7 +10,7 @@
     color: #3399FF;
     font-size: 4em;
     text-align: center;
-    padding-top: 4%;
+    padding-top: 2%;
 }
 
 /* Intro Page */
@@ -37,8 +37,8 @@
     width: 24px;
     height: 24px;
     margin-left: -12px;
-    border-left: 1px solid #000;
-    border-bottom: 1px solid #000;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
     -webkit-animation: sdb07 2s infinite;
@@ -109,7 +109,7 @@
 }
 
 .background .viz_headers {
-    padding-top: 4%;
+    padding-top: 0%;
 }
 
 
@@ -137,6 +137,14 @@ h4.visualization_text {
     height: 100%;
     display: block;
 }
+
+.iframe-container {
+    text-align: right;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
 /* Conclusion */
 #conclusion .section-headers {
     padding-top: 0%;
