@@ -139,11 +139,3 @@ def initFile3():
 initFile1()
 initFile2()
 initFile3()
-
-
-
-
-
-
-# Change for each constellation shell
-genTLE(20, 20)
