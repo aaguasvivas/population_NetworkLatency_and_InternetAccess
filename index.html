@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- Load CSS libraries -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/fullpage.css"/>
+
+    <!-- fullpage scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/fullpage.min.js"></script>
+
+    <!-- initialize fullpage -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#fullpage').fullpage({
+                sectionsColor: ['#fff', '#fff', '#fff', '#fff', '#fff', '#fff', '#fff', '#fff'],
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+
+<div id="fullpage">
+
+    <!-- Introduction Section -->
+    <div class="section" id="intro">Who Gets Access to Reliable Connections?
+        <h2>Visualizing and Exploring the Relationship Between Population and Network Latency</h2>
+        <span></span><span></span><span></span> <!-- Scroll Icon -->
+    </div>
+
+    <!-- Background -->
+    <div class="section background">
+        <div class="">
+            <h1 class="section-headers">Background</h1>
+            <div class="card text-center">
+                <div class="card-body">
+                    <br>
+                    <h4 class="card-text">
+                        In an increasingly virtual world, streaming platforms for movies and TV shows have become more
+                        and
+                        more popular amongst consumers. People have opted to stream from their personal devices instead
+                        of
+                        watching entertainment on live cable or in theaters.
+                        Since the year after its inception in 1997, Netflix offered online movie rentals in which
+                        customers
+                        would receive their DVD in the mail. However, by the end of 2010, Netflix users were streaming
+                        their
+                        entertainment at a far greater pace than those renting, and Netflix became a solely online
+                        streaming
+                        platform. As it developed its streaming services and expanded outside of the United States,
+                        Netflix
+                        has become a staple of modern entertainment. Not only is it the go-to platform for most users,
+                        but
+                        Netflix has become a cultural icon for current generations.
+                        Despite increasing competition as rivals enter the streaming space, Netflix continues to come
+                        out on
+                        top. Let's analyze Netflix's astounding success in an increasingly competitive landscape.</h4>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- World Map -->
+    <div class="section">
+        <h1 class="section-headers viz_headers">Netflix's Revenue Over Time</h1>
+        <div class="row">
+            <div class="col vizText">
+                <h4 class="visualization_text" style="padding-left: 5%; padding-top: 5%">
+                    From the late 1990s to 2002, Netflix grew from a small privately
+                    owned online movie rental business to a
+                    publicly traded multi-million dollar company.
+                    Now, it is a household name making billions of
+                    dollars in revenue every year while still seeing exponential
+                    growth.
+                    <br><br>
+                    Netflix continuously evolved its successful model,
+                    survived a recession, and emerged as a revolutionizing force in the entertainment
+                    industry. With the world becoming more and more
+                    digitized amidst a pandemic, Netflix can expect to continue
+                    its yearly growth in subscribers and revenue.
+                    <br><br>
+                    Hover over the bar chart on the right to see the exact numbers
+                    corresponding to each year during this remarkable
+                    period of growth for the company.
+                </h4>
+            </div>
+            <div class="col visualization" id="visualizations_worldMap">
+                <iframe width="678" height="678" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTSDyqYcNtuycKZeHd_OyoVQFA1cn8S0srf32_AUcHJ3KlkfWu3hX84kvT72kz-wshc63vBQNhyMJSm/pubchart?oid=693353494&amp;format=interactive"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Population and RTT -->
+    <div class="section">
+        <h1 class="section-headers viz_headers">Netflix's Revenue Over Time</h1>
+        <div class="row">
+            <div class="col vizText">
+                <h4 class="visualization_text" style="padding-left: 5%; padding-top: 5%">
+                    From the late 1990s to 2002, Netflix grew from a small privately
+                    owned online movie rental business to a
+                    publicly traded multi-million dollar company.
+                    Now, it is a household name making billions of
+                    dollars in revenue every year while still seeing exponential
+                    growth.
+                    <br><br>
+                    Netflix continuously evolved its successful model,
+                    survived a recession, and emerged as a revolutionizing force in the entertainment
+                    industry. With the world becoming more and more
+                    digitized amidst a pandemic, Netflix can expect to continue
+                    its yearly growth in subscribers and revenue.
+                    <br><br>
+                    Hover over the bar chart on the right to see the exact numbers
+                    corresponding to each year during this remarkable
+                    period of growth for the company.
+                </h4>
+            </div>
+            <div class="col visualization" id="visualizations_population_rtt">
+                <iframe width="678" height="678" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTSDyqYcNtuycKZeHd_OyoVQFA1cn8S0srf32_AUcHJ3KlkfWu3hX84kvT72kz-wshc63vBQNhyMJSm/pubchart?oid=693353494&amp;format=interactive"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- US Map -->
+    <div class="section">
+        <h1 class="section-headers viz_headers">Netflix's Revenue Over Time</h1>
+        <div class="row">
+            <div class="col vizText">
+                <h4 class="visualization_text" style="padding-left: 5%; padding-top: 5%">
+                    From the late 1990s to 2002, Netflix grew from a small privately
+                    owned online movie rental business to a
+                    publicly traded multi-million dollar company.
+                    Now, it is a household name making billions of
+                    dollars in revenue every year while still seeing exponential
+                    growth.
+                    <br><br>
+                    Netflix continuously evolved its successful model,
+                    survived a recession, and emerged as a revolutionizing force in the entertainment
+                    industry. With the world becoming more and more
+                    digitized amidst a pandemic, Netflix can expect to continue
+                    its yearly growth in subscribers and revenue.
+                    <br><br>
+                    Hover over the bar chart on the right to see the exact numbers
+                    corresponding to each year during this remarkable
+                    period of growth for the company.
+                </h4>
+            </div>
+            <div class="col visualization" id="visualizations_us_map">
+                <iframe width="678" height="678" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTSDyqYcNtuycKZeHd_OyoVQFA1cn8S0srf32_AUcHJ3KlkfWu3hX84kvT72kz-wshc63vBQNhyMJSm/pubchart?oid=693353494&amp;format=interactive"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Conclusion -->
+    <div class="section" id="conclusion">
+        <h1 class="section-headers">Conclusion</h1>
+        <div class="card text-center">
+            <div class="card-body">
+                <br>
+                <h4 class="card-text">
+                    The diverse offerings of top-rated movies for a global audience has kept Netflix as the most
+                    successful,
+                    fan-favorite streaming service. Even as multiple new platforms have emerged in the industry and
+                    online
+                    streaming has surged in popularity during the 2020 quarantine, Netflix continues to stand out
+                    amongst
+                    its competitors.
+                    <br>
+                    <br>
+                    <strong>Now that you're convinced to join Netflix, check out our recommendations below and get
+                        binging!</strong>
+                </h4>
+            </div>
+        </div>
+    </div>
+
+    <!-- Acknowledgements -->
+    <div class="section" id="end">
+        <div class="row" id="acknowledgements">
+            <div class="col-md-6">
+                <h1 class="section-headers">About Us</h1>
+                <p>This was a final project for Harvard's CS171 course in fall 2020. It was created by Michelle
+                    Hunnewell, Adelson Aguasvivas, and Belinda Hu.</p>
+                <h2>To learn more: </h2>
+                <ol>
+                    <li>
+                        Visit the project page on
+                        <a href="https://github.com/aaguasvivas/netflixBinged_CS171_Final_Project"
+                           target="_blank">GitHub</a>
+                    </li>
+                    <li>
+                        Read our
+                        <a href="https://docs.google.com/document/d/1OttblJyIrcRFK_hVJbnrpJ0W-cRbauX8_-p-TUS5f78/edit?usp=sharing"
+                           target="_blank">Final Report</a>
+                    </li>
+                </ol>
+
+            </div>
+            <div class="col-md-6">
+                <h1 class="section-headers">Credits</h1>
+                <h2>Data Sources</h2>
+                <ol>
+                    <li>
+                        Subscriber and Revenue Growth:
+                        <a href="https://www.kaggle.com/pariaagharabi/netflix2020" target="_blank">Netflix Subscribers
+                            and Revenue by Country</a>
+                    </li>
+                    <li>
+                        Content Diversity:
+                        <a href="https://www.kaggle.com/shivamb/netflix-shows" target="_blank">Netflix Movies and TV
+                            Shows</a>
+                    </li>
+                    <li>
+                        Viewer Enjoyment:
+                        <a href="https://www.kaggle.com/sarahjeeeze/imdbfile" target="_blank">Netflix's IMDB Ratings</a>
+                    </li>
+                    <li>
+                        International Presence:
+                        <a href="https://www.finder.com/global-netflix-library-totals" target="_blank">Global Netflix
+                            Library Totals</a>,
+                        <a href="https://www.statista.com/statistics/250934/quarterly-number-of-netflix-streaming-subscribers-worldwide/#:~:text=How%20many%20paid%20subscribers%20does,Netflix's%20total%20global%20subscriber%20base"
+                           target="_blank">Subscribers Worldwide</a>
+                    </li>
+                </ol>
+                <h2>Other Sources</h2>
+                <ol>
+                    <li>
+                        <a href="https://interestingengineering.com/the-fascinating-history-of-netflix" target="_blank">The
+                            Fascinating History of Netflix</a>
+                    </li>
+                </ol>
+
+                <h2>Acknowledgements</h2>
+                <p>This project would not have been possible without the support of our amazing TF, Ben Levy, as well as
+                    the
+                    rest of the CS171 teaching staff. We are grateful for all the help and expertise we have received
+                    over the
+                    semester.</p>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+</body>
+</html>

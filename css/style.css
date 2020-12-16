@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/*General Styling */
+.row {
+    height: 90%;
+}
+
+.section-headers {
+    font-family: "Bebas Neue";
+    color: #191970;
+    font-size: 4em;
+    text-align: center;
+    padding-top: 4%;
+}
+
+/* Intro Page */
+#intro {
+    font-size: 6em;
+    font-family: 'Bebas Neue';
+    color: #191970;
+    text-align: center;
+    position: relative;
+}
+
+#intro h2 {
+    font-size: 30px;
+    font-family: 'Bebas Neue';
+    color: black;
+}
+
+/* Scroll Icon */
+/* https://codepen.io/nxworld/pen/OyRrGy */
+#intro span {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: sdb07 2s infinite;
+    animation: sdb07 2s infinite;
+    opacity: 0;
+    box-sizing: border-box;
+}
+#intro span:nth-of-type(1) {
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+}
+#intro span:nth-of-type(2) {
+    top: 83%;
+    -webkit-animation-delay: .15s;
+    animation-delay: .15s;
+}
+#intro span:nth-of-type(3) {
+    top: 86%;
+    -webkit-animation-delay: .3s;
+    animation-delay: .3s;
+}
+@-webkit-keyframes sdb07 {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes sdb07 {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Background */
+.background .section-headers {
+    padding-top: 0%;
+}
+
+.card {
+    width: 60em;
+    height: 28em;
+    margin: 0 auto;
+    float: none;
+    background-color: #fff;
+}
+
+.card-body {
+    font-size: 1em;
+    font-family: helvetica, arial;
+    text-align: center;
+    position: relative;
+    background-color: #fff;
+}
+
+.card-text {
+    color: black;
+}
+
+.background .viz_headers {
+    padding-top: 4%;
+}
+
+
+/* Visualization Slide Styling */
+
+div#visualizations.col.visualization {
+    color: black;
+    font-family: helvetica, arial;
+}
+
+div.col.vizText {
+    color: black;
+    font-family: helvetica, arial;
+}
+
+h4.visualization_text {
+    color: black;
+    font-family: helvetica, arial;
+    text-align: left;
+}
+
+
+/* Conclusion */
+#conclusion .section-headers {
+    padding-top: 0%;
+}
+
+#conclusion p {
+    color: black;
+}
+
+/* Acknowledgements */
+#acknowledgements h2 {
+    font-size: 2em;
+    font-family: 'Bebas Neue';
+    color: black;
+    font-weight: bold;
+}
+
+a {
+    color:  midnightblue;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: midnightblue;
+    text-decoration: underline;
+}
+
+p {
+    font-size: 1em;
+    font-family: helvetica, arial;
+    color: black;
+    text-align: left;
+}
+
+li {
+    font-size: 1em;
+    font-family: helvetica, arial;
+    color: black;
+    text-align: left;
+}
+
+#acknowledgements {
+    padding-left: 7%;
+    padding-right: 7%;
+
+}
+
+
+
