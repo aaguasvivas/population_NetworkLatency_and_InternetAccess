@@ -12,8 +12,8 @@ The purpose of this project was to visualize and explore the relationship betwee
 
 This project is a culmination of all of the work and research we did for our class, CS143: Computer Networks at Harvard University. The major programming languages and frameworks we used include:
 
-- [AGI’s Systems Tool Kit]()
-- [Python]()
+- [AGI’s Systems Tool Kit](https://www.agi.com/products/stk)
+- [Python](https://www.python.org/)
 - [JavaScript](https://www.javascript.com/)
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
