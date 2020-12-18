@@ -31,7 +31,7 @@
 
     <!-- Introduction Section -->
     <div class="section" id="intro">Who Gets Access to Reliable Connections?
-        <h2>Visualizing and Exploring the Relationship Between Population and Network Latency</h2>
+        <h2>Investigating the Relationship Between Population and Network Latency, and the Utility of Low-Earth-Orbit Satellite Constellations</h2>
         <span></span><span></span><span></span> <!-- Scroll Icon -->
     </div>
 
@@ -44,10 +44,16 @@
                     <br>
                     <h4 class="card-text">
                         The purpose of this website is to display the visualizations that
-                        support the claims made in our final report.
+                        support the claims made in our final report. We wanted to create two main sources of knowledge.
+                        The first was the report, containing our key text, data, and findings.
+                        The second was the website, containing our visualizations.
                         <br><br>
                         The goal of this project is to explore the relationship between population, connection speeds,
-                        and access to internet.
+                        and access to internet. We deal with two problems, slow speeds in rural areas and access or no
+                        access to internet. We hypothesized that servers in more populous areas would have faster
+                        ping times. We also design a solution to solve the problem of access to internet worldwide
+                        using a low-orbit satellite constellation. The main metrics we use are Round Trip Time (RTT) and
+                        research based on Starlink satellites.
                         <br><br>
                         Round Trip Time (RTT) is the amount of time it takes for a signal to be sent,
                         plus the amount of time that it takes for that signal to be acknowledged.
@@ -67,11 +73,12 @@
 
     <!-- US Map and World Map with Population and Speeds -->
     <div class="section">
-        <h1 class="section-headers viz_headers">US Map & Pop Map</h1>
+        <h1 class="section-headers viz_headers">Population and RTT in Locations Around the World.</h1>
         <div class="col">
             <div class="row vizText">
                 <h4 class="visualization_text" style="padding-left: 5%; padding-right: 5%; text-align:center;">
-                    The size of each dot corresponds to the relative population size. Red dots indicate slower ping times from Cambridge, MA and green dots indicate faster times. 
+                    The size of each dot corresponds to the relative population size. Red dots indicate slower ping
+                    times from Cambridge, MA and green dots indicate faster times.
                     <br>
                     Internationally, locations farther from Cambridge tend to have slower RTT.
                     <br>
@@ -94,36 +101,52 @@
 
     <!-- World Map and Bubble Chart-->
     <div class="section">
-        <h1 class="section-headers viz_headers">US Map & Pop Map</h1>
+        <h1 class="section-headers viz_headers">Population and RTT in Locations Around the World.</h1>
         <div class="col">
             <div class="row vizText">
                 <h4 class="visualization_text" style="padding-left: 5%; padding-right: 5%; text-align:center;">
- 
+                    Here we provide more information about the specific international locations we looked at beyond
+                    the information above which displays their latitude and longitude.
                     <br>
-                    Hover over the bubbles to see the location name, population size, and ping time. 
+                    Look over each country to see the city and its relative information. Again, the color green refers
+                    to faster ping times, while the color red refers to slower ping times.
+                    <br>
+                    Hover over the bubbles to see the location name, population size and ping time.
                 </h4>
             </div>
-            <div class="row visualization" id="visualizations_worldMap">
+            <div class="row visualization" id="visualizations_internationalMap">
                 <div class="col iframe-container">
                     <iframe width="678" height="420" seamless frameborder="0" scrolling="no"
                             src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTSDyqYcNtuycKZeHd_OyoVQFA1cn8S0srf32_AUcHJ3KlkfWu3hX84kvT72kz-wshc63vBQNhyMJSm/pubchart?oid=693353494&amp;format=interactive"></iframe>
+
                 </div>
                 <div class="col iframe-container">
                     <iframe width="907" height="561" seamless frameborder="0" scrolling="no"
                             src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTSDyqYcNtuycKZeHd_OyoVQFA1cn8S0srf32_AUcHJ3KlkfWu3hX84kvT72kz-wshc63vBQNhyMJSm/pubchart?oid=861763536&amp;format=interactive"></iframe>
+
                 </div>
             </div>
-
         </div>
     </div>
 
 
     <!-- Dot Chart and Circle Tableau Chart -->
     <div class="section">
-        <h1 class="section-headers viz_headers">United States Population and RTT </h1>
+        <h1 class="section-headers viz_headers">The Importance of Location</h1>
         <div class="col">
             <div class="row vizText">
                 <h4 class="visualization_text" style="padding-left: 5%; padding-right: 5%; text-align:center;">
+                    At first glance, the visualization would suggest that the more populous a place is, the slower the
+                    ping time. At first this shocked us, then realizing that a lot of this was affected by the location
+                    of the cities and towns we were pinging.
+                    <br>
+                    The purpose of this section is to take into account how location impacts ping time moving on. This
+                    also serves as a place to explore some of the most populous locations and how RTT is affected there.
+                    Cities far away from Cambridge naturally have large ping times because of distance. We parsed
+                    through this data and noticed that the true result of this project was hiding behind the location
+                    parameter. Go over to the next slide to see the results.
+                    <br>
+                    Hover over the bubbles to see the city name, population size and ping time.
                 </h4>
             </div>
             <div class="row visualization" id="visualizations_line_chart">
@@ -170,16 +193,28 @@
 
     <!-- Satellite Information -->
     <div class="section">
-        <h1 class="section-headers viz_headers">Bar</h1>
+        <h1 class="section-headers viz_headers">Ping Times by the Type of Location Pinged</h1>
         <div class="col">
             <div class="row vizText">
                 <h4 class="visualization_text" style="padding-left: 5%; padding-right: 5%; text-align:center;">
-                    Simulations of prospective low-orbit satellite constellations using AGI’s Systems Tool Kit demonstrate the possibility of solve the problem of low latency across the country.
+                    Looking at ping times by their respective location and weighting them against each other,
+                    we discovered an inverse relationship between round-trip time and population and thereby
+                    confirmed our hypothesis.
+                    <br>
+                    In the United States the average ping time from Cambridge, MA to rural areas was 52.58% greater than
+                    the ping time to US major cities. The average ping time to rural towns is 95.51 ms and to major
+                    cities 62.59 ms. International locations have longer average ping times than either rural or urban
+                    US locations with an average of 182.91 ms. Overall cities with larger populations did not correspond
+                    with shorter RTT because distance also affects RTT.
+                    <br>
+                    International major cities also had faster ping times than international rural locations within
+                    close proximity, meaning this is a real disparity.
                 </h4>
             </div>
             <!--bar chart -->
             <div class="row visualization" style="align-items: center; justify-content: center">
-                <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTSDyqYcNtuycKZeHd_OyoVQFA1cn8S0srf32_AUcHJ3KlkfWu3hX84kvT72kz-wshc63vBQNhyMJSm/pubchart?oid=1867552406&amp;format=interactive"></iframe>
+                <iframe width="600" height="371" seamless frameborder="0" scrolling="no"
+                        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTSDyqYcNtuycKZeHd_OyoVQFA1cn8S0srf32_AUcHJ3KlkfWu3hX84kvT72kz-wshc63vBQNhyMJSm/pubchart?oid=1867552406&amp;format=interactive"></iframe>
             </div>
 
         </div>
@@ -187,11 +222,14 @@
 
     <!-- Satellite Information -->
     <div class="section">
-        <h1 class="section-headers viz_headers">Satellite </h1>
+        <h1 class="section-headers viz_headers">The Utility of Low-Earth-Orbit Satellite Constellations </h1>
         <div class="col">
             <div class="row vizText">
                 <h4 class="visualization_text" style="padding-left: 5%; padding-right: 5%; text-align:center;">
-                    Starlink is a satellite internet constellation currently being constructed by SpaceX with the aim to provide 45 families with internet access by 2021 and an additional 90 families soon thereafter. Inspired by Starlink and the lack of internet around the world, we decided to create a satellite simulation and visualize the difference in ping times between rural-urban areas.
+                    Starlink is a satellite internet constellation currently being constructed by SpaceX with the aim to
+                    provide 45 families with internet access by 2021 and an additional 90 families soon thereafter.
+                    Inspired by Starlink and the lack of internet around the world, we decided to create a satellite
+                    simulation and visualize the difference in ping times between rural-urban areas.
 
                 </h4>
             </div>
@@ -211,11 +249,12 @@
 
     <!-- Satellite Information -->
     <div class="section">
-        <h1 class="section-headers viz_headers">Satellite</h1>
+        <h1 class="section-headers viz_headers">The Utility of Low-Earth-Orbit Satellite Constellations</h1>
         <div class="col">
             <div class="row vizText">
                 <h4 class="visualization_text" style="padding-left: 5%; padding-right: 5%; text-align:center;">
-                Simulations of prospective low-orbit satellite constellations using AGI’s Systems Tool Kit demonstrate the possibility of solve the problem of low latency across the country.
+                    Simulations of prospective low-orbit satellite constellations using AGI’s Systems Tool Kit
+                    demonstrate the possibility of solve the problem of low latency across the country.
                     <br>
                 </h4>
             </div>
@@ -249,7 +288,7 @@
                     Our low-orbit satellite constellation serves as a potential solution not necessarily to the
                     aforementioned variation in network latency, but to the widespread lack of internet access.
                     <br>
-                    
+
                 </h4>
             </div>
         </div>
@@ -260,53 +299,17 @@
         <div class="row" id="acknowledgements">
             <div class="col" style="text-align: center">
                 <h1 class="section-headers">About Us</h1>
-                <p style="text-align: center">This was a final project for Harvard's CS143 course in fall 2020. It was created by Adelson Aguasvivas, Madison Harris, Dominic Garrity, and Santy Mendoza. </p>
+                <p style="text-align: center">This was a final project for Harvard's CS143 course in fall 2020. It was
+                    created by Adelson Aguasvivas, Madison Harris, Dominic Garrity, and Santy Mendoza. </p>
                 <h2>To learn more: Visit the project page on
                     <a href="https://github.com/aaguasvivas/population_NetworkLatency_and_InternetAccess"
-                       target="_blank">GitHub</a> </h2>
+                       target="_blank">GitHub</a></h2>
 
             </div>
-            <!--
-            <div class="col-md-6">
-                <h1 class="section-headers">Credits</h1>
-                <h2>Data Sources</h2>
-                <ol>
-                    <li>
-                        Subscriber and Revenue Growth:
-                        <a href="https://www.kaggle.com/pariaagharabi/netflix2020" target="_blank">Netflix Subscribers
-                            and Revenue by Country</a>
-                    </li>
-                    <li>
-                        Content Diversity:
-                        <a href="https://www.kaggle.com/shivamb/netflix-shows" target="_blank">Netflix Movies and TV
-                            Shows</a>
-                    </li>
-                    <li>
-                        Viewer Enjoyment:
-                        <a href="https://www.kaggle.com/sarahjeeeze/imdbfile" target="_blank">Netflix's IMDB Ratings</a>
-                    </li>
-                    <li>
-                        International Presence:
-                        <a href="https://www.finder.com/global-netflix-library-totals" target="_blank">Global Netflix
-                            Library Totals</a>,
-                        <a href="https://www.statista.com/statistics/250934/quarterly-number-of-netflix-streaming-subscribers-worldwide/#:~:text=How%20many%20paid%20subscribers%20does,Netflix's%20total%20global%20subscriber%20base"
-                           target="_blank">Subscribers Worldwide</a>
-                    </li>
-                </ol>
-                <h2>Other Sources</h2>
-                <ol>
-                    <li>
-                        <a href="https://interestingengineering.com/the-fascinating-history-of-netflix" target="_blank">The
-                            Fascinating History of Netflix</a>
-                    </li>
-                </ol>
-            </div>
-        -->
         </div>
     </div>
 
 
-</div>
 </div>
 </body>
 </html>
